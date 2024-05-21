@@ -1,0 +1,67 @@
+<!-- Side navigation component -->
+<app-side-nav></app-side-nav>
+
+<!-- Main container for the transaction history section -->
+<div class="main-container">
+    <div class="container">
+        <!-- Section heading -->
+        <h2>Transaction History</h2>
+
+        <!-- Form for selecting the month and submitting an expense -->
+        <form [formGroup]="todoForm" (ngSubmit)="onSubmitExpense()" class="input-form">
+            <!-- Form group for month selection -->
+            <div class="form-group">
+                <select formControlName="month" id="month" class="form-control" (change)="onChangeExpense($event)">
+                    <!-- Placeholder option -->
+                    <option value="" disabled>Select Month</option>
+                    <!-- Options for each month -->
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <!-- Additional form elements can be added here -->
+            </div>
+            <!-- Display total transactions for the selected month -->
+            <div class="total-todoTrans">
+                Transactions for {{ selectedMonth }}: ${{ calculateTotalExpense(selectedMonth) }}
+            </div>
+        </form>
+
+        <hr>
+
+        <!-- Section for displaying the transaction history list -->
+        <h3>Transaction History List - {{ selectedMonth }}</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <!-- Table headers for transaction type and amount -->
+                    <th>Transaction Type</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Iterate over filtered expenses and display each transaction -->
+                <tr *ngFor="let todoTrans of getFilteredExpenses()">
+                    <td>{{ todoTrans.expenseType }}</td>
+                    <td>{{ todoTrans.expenseAmount }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Form for additional inputs and back button -->
+        <div class="input-form">
+            <div class="form-group">
+                <!-- Additional form elements can be added here -->
+            </div>
+            <div class="form-group">
+                <!-- Additional form elements can be added here -->
+            </div>
+                        <!-- Button to navigate back to the previous page -->
+                        <button class="btn btn-primary" (click)="onBack()">Back</button>
+                      </div>
+                  </div>
+              </div>
+
+

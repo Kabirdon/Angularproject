@@ -1,0 +1,93 @@
+/* Global styles for the body */
+body {
+  font-family: Arial, sans-serif; /* Font family for the text */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f3f5f9; /* Background color of the body */
+}
+
+/* Styles for the navbar */
+.navbar {
+  background: linear-gradient(135deg, #008080, #80ced6); /* Gradient background */
+  padding: 10px 20px; /* Padding inside the navbar */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border-radius: 20px; /* Rounded corners */
+  color: #ffffff; /* Text color */
+}
+
+/* Styles for the login and register form container */
+.login-container {
+  max-width: 400px; /* Maximum width of the container */
+  margin: 100px auto 50px auto; /* Margin for positioning */
+  background-color: #ffffff; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow for the container */
+  padding: 40px; /* Padding inside the container */
+}
+
+/* Styles for the form headings */
+.login-container h2 {
+  margin-bottom: 20px; /* Margin below the heading */
+  text-align: center; /* Center align text */
+}
+
+/* Styles for form groups */
+.form-group {
+  margin-bottom: 25px; /* Margin below each form group */
+}
+
+/* Styles for input fields */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 90%; /* Width of the input fields */
+  padding: 15px; /* Padding inside the input fields */
+  border-radius: 6px; /* Rounded corners */
+  border: 1px solid #008080; /* Border color */
+  background-color: #f5f5f5; /* Background color of the input fields */
+}
+
+/* Styles for focused input fields */
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  outline: none; /* Remove default outline */
+}
+
+/* Styles for the submit button */
+button {
+  width: 100%; /* Full width button */
+  padding: 15px; /* Padding inside the button */
+  border: none; /* Remove border */
+  border-radius: 6px; /* Rounded corners */
+  background: linear-gradient(135deg, #008080, #80ced6); /* Gradient background */
+  color: #ffffff; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+/* Styles for button hover state */
+button:hover {
+  background: #67bbc6; /* Background color on hover */
+}
+
+/* Styles for paragraph text */
+p {
+  text-align: center; /* Center align text */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: #666666; /* Text color */
+  transition: color 0.3s ease; /* Transition for text color */
+}
+
+/* Styles for highlighted text */
+.highlighted {
+  text-decoration: underline; /* Underline text */
+}
+
+/* Styles for highlighted text hover state */
+.highlighted:hover {
+  color: #80ced6; /* Text color on hover */
+  text-decoration: underline; /* Underline text */
+}

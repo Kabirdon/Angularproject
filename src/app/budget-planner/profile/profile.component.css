@@ -1,0 +1,75 @@
+/* Style for the profile form container */
+.profile-form {
+  max-width: 600px; /* Maximum width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+  margin-top: 60px; /* Margin from the top */
+  padding: 20px; /* Padding inside the form */
+  background-color: #f9f9f9; /* Background color of the form */
+  color: #000; /* Text color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for the form */
+}
+
+/* Style for headings */
+h2 {
+  text-align: center; /* Center align text */
+  color: #333; /* Text color */
+}
+
+/* Style for rows containing multiple form groups */
+.form-row {
+  display: flex; /* Display as flexbox */
+  justify-content: space-between; /* Space between form groups */
+  margin-bottom: 15px; /* Margin below the row */
+}
+
+/* Style for each form group */
+.form-group {
+  flex: 1; /* Flexible width */
+}
+
+/* Style for labels */
+label {
+  display: block; /* Block display */
+  margin-bottom: 5px; /* Margin below the label */
+  color: #555; /* Text color */
+}
+
+/* Style for input and select elements */
+input,
+select {
+  width: 95%; /* Width of input/select */
+  padding: 10px; /* Padding inside input/select */
+  border: 1px solid #ccc; /* Border around input/select */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Specific width adjustments for various input fields */
+#occupation,
+#contact,
+#email,
+#age,
+#dob {
+  width: calc(90% - 5px); /* Adjusted width */
+}
+
+#gender {
+  width: calc(97% - 5px); /* Adjusted width */
+}
+
+/* Style for the submit button */
+button {
+  width: 40%; /* Width of the button */
+  padding: 12px 0; /* Padding inside the button */
+  background-color: #155f68; /* Background color */
+  color: #fff; /* Text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Hover effect for the submit button */
+button:hover {
+    background-color: #67bbc6; /* Change background color on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+

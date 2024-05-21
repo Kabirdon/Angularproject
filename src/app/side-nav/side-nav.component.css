@@ -1,0 +1,89 @@
+/* Navbar styling */
+.navbar {
+  background: linear-gradient(135deg, #008080, #80ced6);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+/* Toggle button styling */
+.toggle-button-row {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-button-row:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+.toggle-button-row mat-icon {
+  font-size: 24px;
+  color: #008080;
+}
+
+.toggle-button-row:active {
+  background: #f0f0f0;
+}
+
+/* Slide-out panel styling */
+.slide-out-panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -250px; /* Hidden by default */
+  width: 250px;
+  background: linear-gradient(135deg, #008080, #80ced6);
+  transition: transform 0.3s ease-out;
+  z-index: 1000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.slide-out-panel.slide-out {
+  transform: translateX(250px); /* Show when open */
+}
+
+/* Slide-out content styling */
+.slide-out-content {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.edit-col {
+  color: #000;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.edit-col:hover {
+  color: #ffffff;
+  background-color: #008080;
+}
+
+.nav {
+  text-align: center;
+  justify-content: center;
+  background-color: #87dcdc;
+}
